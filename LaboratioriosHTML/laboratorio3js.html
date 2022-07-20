@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #botones .blue, .red, .green, .pink{
+        color:white;
+        width:100px;
+        height: 50px;
+        border:none;
+        border-radius:5%;
+        margin:15px;
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+    #botones{
+        display:flex;
+        justify-content: space-around;
+        margin:0px;
+        padding:0px;
+    }
+    .blue{
+        background-color: rgba(0, 0, 255, 0.534);
+    }
+    .red{
+        background-color: rgba(255, 0, 0, 0.61);
+    }
+    .green{
+        background-color: rgba(9, 192, 9, 0.822);
+    }
+    .pink{
+        background-color: rgba(255, 192, 203, 0.829);
+    }
+    .titulored{
+        border: 2px solid red;
+        width: 220px;
+        height: 45px;
+        display: block;
+        margin:auto;
+
+    }
+    .titulogreen{
+       background-color: rgba(0, 128, 0, 0.384);
+        width: 220px;
+        height: 45px;
+        display: block;
+        text-align: center;
+        margin:auto;
+        padding:1px;
+        color:white;
+
+    }
+    h1{
+        text-align: center;
+        font-size: 20px;
+        margin:20px;
+    }
+    #img img {
+        width: 300px;
+    }
+</style>
+<body>
+   
+        <div id="botones">
+    <button  class="blue" id="blue">Blue</button>
+        <button class="red" id="red">Red</button>
+        <button class="green" id="green">Green</button>
+        <button class="pink">Pink</button>
+    </div>
+    <div id="titulo1">
+    <h1 id="titulos"></h1>
+    <div id="img"></div>
+    </div>
+    <script src="./js/Laboratorio3js.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

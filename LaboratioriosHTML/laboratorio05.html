@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio05</title>
+</head>
+<body>
+    <div id="nuevo">
+        <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre">
+<input type="text" name="txtApellido" id="txtApellido"placeholder="Apellido">
+<button id="btnAgregar">Agregar</button>
+    </div>
+    <div id="items"></div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+let nombreIngreso =$("#txtNombre");
+let apellidoIngreso = $("#txtApellido")
+let items = $('#items');
+const botonAgregar = $('btnAgregar');
+let lista=[];
+let template = Handlebars.compile(`
+<ul>
+{{#each items}}
+<li>...<li>
+{{/each}}
+</ul>`)
+</script>
+</html>

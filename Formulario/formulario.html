@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h5{
+        font-size: 20px;
+        color:gray;
+        text-align: center;
+    }
+    .datos{
+       background: #222222;
+     margin:auto;
+    width: 50%;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    .datos label{
+        display: block;
+        margin: 0;
+        padding: 1em;
+        color:#fff;
+    }
+    .datos input{
+         width: 100%;
+        border: none;
+        background: none;
+        outline: 0;
+        margin:auto;
+        color: #fff;
+        border-style:none;
+        border-bottom: solid 2px red;
+    
+    }
+
+    .datos :placeholder-shown{
+        text-align: center;
+    }
+    .part1 {
+        padding: 2px;
+        height: auto;
+        width: 250px;
+    }
+        .part2 {
+        padding: 2px;
+        height: auto;
+        width: 250px;
+    }
+        .part3 {
+           padding: 2px;
+        height: auto;
+        width: 250px;
+    }
+        .part4 {
+         padding: 2px;
+        height: auto;
+        width: 250px;
+    }
+    button{
+        color: black;
+        background-color: rgba(226, 13, 13, 0.726);
+        width:100px;
+    }
+    button input{
+        background:none;
+    }
+
+
+
+
+</style>
+<body>
+    <h5>Alta de Cliente</h5>
+    <!-- get (obtiene) Muesta datos de un/os registro/s-->
+    <!--post modifica regisro/s de una tabla-->
+    <form action="post">
+        <div class="datos">
+        <div class="part1">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre comleto" maxlength="60">
+        </div>
+        <div class="part2">
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" maxlenght="30">
+        </div>
+        <div class="part3">
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" min="18" max="20">
+        </div>
+        <div class="part4">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required placeholder="admin@sitio.com">
+        </div>
+        <button>
+    <input type="submit" value="Grabar">
+        </button>
+    </div>
+    </form>
+
+</body>
+</html>

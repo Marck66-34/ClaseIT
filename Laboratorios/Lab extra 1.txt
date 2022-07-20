@@ -1,0 +1,11 @@
+Realiza un script que pida cadenas de texto  hasta que se pulse “cancelar”. Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión 
+
+
+--------------------------------
+Adivinar nº 
+hacer un script que dada una cantidad de intentos hay que adivinar el nº secreto
+
+
+---------------------------------
+Mostrar los campos y sus valores del arreglo de objetos empleadosDetalle
+var empleadosDetalle = [{nombre:'Pedro', antiguedad:5}, {nombre:'Erica', antiguedad:12}]

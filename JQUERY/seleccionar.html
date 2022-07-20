@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar</title>
+</head>
+<body>
+    <h3 class="parte1">Seleccione un valor</h3>
+    <br>
+    <select>
+        <option value="1">S UNO</option>
+        <option value="2">S DOS</option>
+        <option value="3">S TRES</option>
+    </select>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+        //sintaxis de Jquery-metodo val
+        function mostrarValor() {
+            let valor=$('select').val()
+            alert(valor);
+        }
+        $('select').change(mostrarValor);
+    </script>
+</body>
+</html>

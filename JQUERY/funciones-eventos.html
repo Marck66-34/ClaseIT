@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuciones-Eventos</title>
+</head>
+<body>
+    <h3 class="parte1">Titulo</h3>
+  <p class="parte1">Hace click sobre el texto</p>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(inicializar)
+    function inicializar(){
+        // $('p').click(alertarclk)
+        $('p').dblclick(alertardblclk)
+        // $('h3').mouseover(mouseup)
+        $('h3').mouseout(mousefuera)
+    }
+    function alertarclk(){
+        alert('hiciste click')
+    }
+    function alertardblclk(){
+        alert("hiciste doble click")
+    }
+    function mouseup(){
+    alert('pasaste el mouse sobre la etiqueta') 
+        
+    }
+    function mousefuera() {
+        alert("sacaste el cursor de la etiqueta")
+    }
+  </script>
+
+        
+</body>
+</html>
